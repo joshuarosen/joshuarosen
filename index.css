@@ -178,6 +178,18 @@ header table {
     border-bottom:4px solid rgb(255, 44, 90);
     width:6%;
 }
+img {
+    max-width:100%;
+}
+.project-container {
+    display: flex;
+}
+.project-image {
+    flex-grow: 2;
+}
+.project-content {
+    flex-grow: 1;
+}
 #photos {
     width:100%;
     columns:3;
