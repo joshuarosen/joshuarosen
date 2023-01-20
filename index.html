@@ -11,35 +11,24 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header id="header" class="animate__animated animate__slideInDown">
-        <table>
-            <tr>
-                <td id="name">Joshua Rosen</td>
-                <td id="email"><i class="fas fa-at"></i>&nbsp; joshuarosen117@gmail.com</td>
-            </tr>
-        </table>
+    <header id="header" class="animate__animated animate__fadeInDown">
+        <div class="header-container">
+            <div id="name">Joshua Rosen</div>
+            <!-- TODO: Link this email to be clickable. -->
+            <div id="email"><i class="fas fa-at"></i>joshuarosen117@gmail.com</div>
+        </div>
     </header>
-    <table id="top_part">
-        <tr>
-            <td id="about" class="animate__animated animate__slideInLeft" style="animation-delay:.4s;">
-                <h1>Making games and other things</h1>
-            </td>
-        </tr>
-    </table>
-    <!-- TODO: Fade in with animation. -->
-    <div id="games" class="animate__animated animate__slideInUp" style="animation-delay:.8s;">
+    <div id="about" class="animate__animated animate__fadeInLeft" style="animation-delay:.35s; animation-duration:2s">
+        <h1>Making games and other things</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quam mauris, iaculis ut ultrices et, congue ut sapien.</div>
+    </div>
+    <div id="games" class="animate__animated animate__fadeInUp" style="animation-delay:.8s; animation-duration:2s">
         <h1>games</h1>
         <div class="project-container">
             <div class="project-image">
-                <!-- TODO: Size image down, put text on the right, make it a slideshow of images? -->
-                <img src="./img/projects/abbots-gambol.png"
-                     alt ="Abbot's Gambol" />
-                <!-- TODO: Hover image enlarges it (plays a gif?), clicking opens itch.io page -->
+                <img src="./img/projects/abbots-gambol.png" alt ="Abbot's Gambol" />
             </div>
-            <div class="project-content">
-                  <h2>Abbott's Gambol</h2>
-                  <p>This is a card game.</p>
-                  <!-- TODO: Also include itch.io link here -->
+            <div class="project-overlay">
             </div>
         </div>
     </div>
