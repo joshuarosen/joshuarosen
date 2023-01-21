@@ -7,10 +7,11 @@ body {
     max-width:100vw;
     overflow-x:hidden;
     scroll-behavior: smooth;
+    /* color: #444452 */
 }
 header {
-    width:92vw;
-    padding:6vh 4vw;
+    width:100vw;
+    padding:3vh 4vw;
     position:fixed;
     font-weight:bold;
     background:transparent;
@@ -23,17 +24,21 @@ header table {
 .header-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     max-width: 500px;
-    margin: auto;
+    padding-left: 10vw;
+    /* margin: auto; */
 }
 #name {
-    font-size:50px;
-    color:rgb(100, 44, 90);
+    font-size:52px;
+    /* color:rgb(100, 44, 90); */
+    border-bottom:4px solid rgb(100, 44, 90);
 }
 #email {
-    font-size:14px;
+    font-size:22px;
+    padding-bottom:12px;
+    border-bottom:4px solid rgb(100, 44, 90);
 }
 #magnify {
     width:100vw;
@@ -70,11 +75,11 @@ header table {
     flex-direction:column;
     justify-content:center;
     text-align:left;
-    padding:15vh 10vw 8vh;
+    padding:25vh 10vw;
     font-size:24px;
 }
 #about h1 {
-    font-size:45px;
+    font-size:38px;
     word-wrap:break-word;
 }
 #games {
@@ -110,6 +115,7 @@ header table {
     padding-bottom: 47.25%;
     position: relative;
     transition:0.4s ease-in-out;
+    box-shadow: 5px 5px 6px rgb(121, 121, 121);
 }
 .project-container:hover {
     transform: scale(1.1);
@@ -188,8 +194,8 @@ header table {
     width:8%;
 }
 #contact {
-    width:92vw;
-    padding:6vh 4vw;
+    width:84%;
+    padding:25vh 10vw;
 }
 #contact h1 {
     padding:5px 0px;
