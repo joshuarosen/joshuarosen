@@ -7,22 +7,20 @@
     <title>Joshua Rosen | Games and things</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header id="header" class="animate__animated animate__fadeInDown">
         <div class="header-container">
             <div id="name">Joshua Rosen</div>
-            <!-- TODO: Link this email to be clickable. -->
-            <!-- <div id="email"><i class="fas fa-at"></i>joshuarosen117@gmail.com</div> -->
         </div>
     </header>
     <div id="about" class="animate__animated animate__fadeInLeft" style="animation-delay:.35s; animation-duration:2s">
         <h1>Hello!</h1>
-        <div>I'm a software developer in Seattle that currently works on Android apps. Outside of work, I make indie games for fun. Below are of some of my favorite games I've made. I also like skiing, unicycling, movies, and gaming.</div>
+        <div>I'm a software engineer in Seattle currently working on Android development. Outside of work, I make indie games for fun. Below are a few of my favorites. In my free time I also like skiing, unicycling, watching movies, and gaming.</div>
         <br/>
-        <div>Feel free to shoot me an email: <b>joshuarosen117<i class="fas fa-at"></i>gmail.com</b></div>
+        <div>Feel free to shoot me an email: <a style="color:inherit" href="mailto:joshuarosen117@gmail.com"><b>joshuarosen117<i class="fas fa-at"></i>gmail.com</b></a></div>
     </div>
     <div id="games" class="animate__animated animate__fadeInUp" style="animation-delay:.8s; animation-duration:2s">
         <h1>games</h1>
@@ -54,25 +52,17 @@
     </div>
     <div id="contact">
         <h1>contact</h1>
-            <table>
-                <tr>
-                    <td>
-                        <div id="inner_div">
-                            <table id="inner_table">
-                                <tr>
-                                    <!-- Email, LinkedIn, itch.io, github? -->
-                                    <td><i class="fas fa-at"></i> &nbsp; joshuarosen117@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="social"><i class="fab fa-instagram"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        <div class="contact-container">
+            <div class="contact-item">
+                <a href="mailto:joshuarosen117@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/joshua-rosen-96992b167/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="contact-item">
+                <a href="https://mrmeowmurs.itch.io/"><i class="fab fa-itch-io"></i></a>
+            </div>
+        </div>
     </div>
     <script src="index.js" type="text/javascript"></script>
 </body>

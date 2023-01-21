@@ -93,22 +93,6 @@ header table {
     margin-bottom: 32px;
     width:6%;
 }
-.social {
-    color:rgb(255, 44, 90);
-    font-size:23px;
-    padding:12px 17px;
-    border-radius:50%;
-    background:transparent;
-    transition:0.4s ease-in-out;
-    font-weight:bold;
-    margin:0px 8px;
-}
-.social:hover { 
-    cursor: pointer;
-    color:#fff;
-    background:rgb(255, 44, 90);
-    box-shadow:0px 10px 30px rgba(255, 66, 107,0.8);
-}
 /* TODO: Max size on this? */
 .project-container {
     width: 84%;
@@ -169,30 +153,6 @@ header table {
     width:100%;
     height:100%;
 }
-#photos {
-    width:100%;
-    columns:3;
-    column-gap:4%;
-    z-index:1;
-    transition:0.4s ease-in-out;
-}
-/* #games img {
-    transition:0.4s ease-in-out;
-}
-#games img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-} */
-#bio {
-    width:92vw;
-    padding:6vh 4vw;
-    font-weight:bold;
-}
-#bio h1 {
-    padding:5px 0px;
-    border-bottom:4px solid rgb(100, 44, 90);
-    width:8%;
-}
 #contact {
     width:84%;
     padding:25vh 10vw;
@@ -202,20 +162,35 @@ header table {
     border-bottom:4px solid rgb(100, 44, 90);
     width:10%;
 }
-#contact table {
-    width:100%;
+.contact-container {
+    display: flex;
 }
-#contact table tr td {
-    width:50%;
+.contact-item {
+    width: 65px;
+    height: 65px;
+    border-radius:50%;
+    margin: 0px 10px;
+    background:transparent;
+    transition:0.4s ease-in-out;
+    text-align: center;
 }
-#inner_div table{
-    width:100%;
+.contact-item:hover {
+    background:rgb(100, 44, 90);
+    box-shadow:0px 10px 30px rgba(100, 44, 90, 0.8);
 }
-#inner_div table tr td{
+.contact-item a {
+    color:#000;
+    font-size:40px;
+    border-radius:50%;
+    background:transparent;
+    transition:0.4s ease-in-out;
     font-weight:bold;
 }
-#inner_table tr td{
-    padding:10px 20px !important;
+.contact-item:hover a { 
+    cursor: pointer;
+    color:#fff;
+    /* background:rgb(100, 44, 90);
+    box-shadow:0px 10px 30px rgba(100, 44, 90, 0.8); */
 }
 ::placeholder {
     color:#000;
