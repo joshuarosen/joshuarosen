@@ -155,7 +155,7 @@ header table {
 }
 #contact {
     width:84%;
-    padding:25vh 10vw;
+    padding:12vh 10vw 7vh;
 }
 #contact h1 {
     padding:5px 0px;
@@ -169,7 +169,7 @@ header table {
     width: 65px;
     height: 65px;
     border-radius:50%;
-    margin: 0px 10px;
+    margin: 0px 5px;
     background:transparent;
     transition:0.4s ease-in-out;
     text-align: center;
@@ -180,6 +180,7 @@ header table {
 }
 .contact-item a {
     color:#000;
+    line-height: 65px;
     font-size:40px;
     border-radius:50%;
     background:transparent;
