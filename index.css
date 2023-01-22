@@ -94,10 +94,12 @@ header {
     margin-bottom: 32px;
     width:34%;
 }
-/* TODO: Max size on this? */
 .project-container {
-    width: 84%;
-    padding-bottom: 47.25%;
+    object-fit: cover;
+    width: 80vw;
+    height: 45vw;
+    max-width: 1000px;
+    max-height: 562.5px;
     margin-bottom:45px;
     position: relative;
     transition:0.4s ease-in-out;
@@ -118,9 +120,11 @@ header {
 .project-image, .project-overlay {
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    right: 0;
+    /* height: 100%;
+    width: 100%; */
 
     background-color: rgba(0, 0, 0, 0.5);
 }
