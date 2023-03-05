@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header id="header" class="animate__animated animate__fadeInDown">
+    <!-- <header id="header" class="animate__animated animate__fadeInDown">
         <div class="header-container">
             <div id="name">Joshua Rosen</div>
         </div>
-    </header>
-    <div id="about" class="animate__animated animate__fadeInLeft" style="animation-delay:.35s; animation-duration:2s">
+        class="animate__animated animate__fadeInLeft" style="animation-delay:.35s; animation-duration:2s">
+    </header> -->
+    <div id="about">
         <h1>Hello!</h1>
         <div>I'm a software engineer in Seattle currently working on Android development. Outside of work, I make indie games for fun. I also like skiing, unicycling, watching movies, and gaming.</div>
         <br/>
@@ -23,32 +24,23 @@
     </div>
     <div id="games" class="animate__animated animate__fadeInUp" style="animation-delay:.8s; animation-duration:2s">
         <h1>games i've worked on</h1>
-            <div class="project-container">
-                <a href="https://mrmeowmurs.itch.io/abbots-gambol">
-                    <div class="project-image">
-                        <img src="./img/projects/abbots-gambol.png" alt ="Abbot's Gambol" />
+        <table>
+            <tr>
+                <td class="game-info">
+                    <div class="game-title">Abbot's Gambol</div>
+                    <div class="game-desc">A card game for one or two players.</div>
+                    <div class="game-role">Solo project</div>
+                    <div class="game-platforms">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-windows"></i>
+                            <i class="fab fa-apple"></i>
                     </div>
-                    <div class="project-overlay">
-                        <div class="project-text-container">
-                            <div class="project-text-title">
-                                Abbot's Gambol
-                            </div>
-                            <div class="project-text-desc">
-                                A card game for one or two players.
-                            </div>
-                            <div class="project-text-role">
-                                &#x2022; Solo project &#x2022;
-                            </div>
-                            <div class="project-text-platforms">
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-windows"></i>
-                                <i class="fab fa-apple"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="project-container">
+                </td>
+                <td><img class="game-image" src="./img/projects/abbots-gambol.png"/></td>
+            </tr>
+        </table>
+           
+            <!-- <div class="project-container">
                 <a href="https://mrmeowmurs.itch.io/typeknight">
                     <div class="project-image">
                         <img src="./img/projects/typeknight.png" alt ="Typeknight" />
@@ -95,7 +87,7 @@
                     </div>
                 </a>
             </div>
-    </div>
+    </div> -->
     <div id="contact" class="animate__animated animate__fadeInUp" style="animation-delay:.8s; animation-duration:2s">
         <h1>contact</h1>
         <div class="contact-container">
