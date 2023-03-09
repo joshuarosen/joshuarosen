@@ -64,6 +64,7 @@ header {
     margin-bottom: 32px;
     margin-top:175px;
     /* width:34%; */
+    font-size:min(3.5vw, 30px);
 }
 /* #games img {
     width:100%;
@@ -80,29 +81,33 @@ header {
 .game-info {
     width:auto;
     text-align:center;
-    padding-right: 60px;
 }
 .game-media {
     width: 620px;
     display: table-cell;
 }
 .game-image {
-    width: 600px;
+    /* width: 600px; */
+    width: min(35vw, 600px);
     height: auto;
 }
 .game-title {
-    font-size: 32pt;
+    /* font-size: 32pt; */
+    font-size: min(3vw, 32px);
     padding-bottom: 10px;
 }
 .game-desc {
-    font-size: 24pt;
+    /* font-size: 24pt; */
+    font-size: min(2.5vw, 28px);
     padding-bottom: 30px;
 }
 .game-role {
-    font-size: 20pt;
+    font-size: min(2.5vw, 28px);
+    /* font-size: 20pt; */
 }
 .game-platforms {
-    font-size: 24pt;
+    font-size: min(2.5vw, 28px);
+    /* font-size: 24pt; */
 }
 .project-container {
     object-fit: cover;
