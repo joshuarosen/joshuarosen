@@ -11,12 +11,21 @@ body {
     scroll-behavior: smooth;
 }
 header {
-    width:100vw;
-    padding:3vh 4vw;
-    position:fixed;
+    position:sticky;
+
+    background:#fff;
+    /* box-shadow: 0px 0px 20px rgba(0,0,0,0.09); */
+
+
+    margin-top:min(5vw, 75px);
+    margin-left:30px;
+    margin-right:30px;
+
+    /* padding:3vh 4vw; */
+    /* position:fixed; */
     font-weight:bold;
-    background:transparent;
-    transition:0.4s ease-in-out;
+    /* background:transparent; */
+    /* transition:0.4s ease-in-out; */
     z-index:2;
 }
 .header-container {
@@ -28,7 +37,7 @@ header {
     padding-left: 10vw;
 }
 #name {
-    font-size:52px;
+    font-size:min(4vw, 42pt);
     border-bottom:4px solid rgb(100, 44, 90);
 }
 #email {
@@ -37,7 +46,7 @@ header {
     border-bottom:4px solid rgb(100, 44, 90);
 }
 #about {
-    margin-top:100px;
+    margin-top:min(7.5vw, 100px);
     margin-left:30px;
     margin-right:30px;
     justify-content:center;
