@@ -74,9 +74,9 @@ hr.rounded {
 .game-platforms {
     font-size: min(2vw, 24pt);
 }
-#contact {
+/* #contact {
     padding-bottom:150px;
-}
+} */
 #contact h1 {
     margin: min(3vw, 30px) 30px;
     font-size:min(3vw, 38pt);
