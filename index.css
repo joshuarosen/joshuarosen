@@ -77,6 +77,10 @@ hr.rounded {
 /* #contact {
     padding-bottom:150px;
 } */
+.link {
+    color: blue;
+    text-decoration: underline;
+}
 #contact h1 {
     margin: min(3vw, 30px) 30px;
     font-size:min(3vw, 38pt);
