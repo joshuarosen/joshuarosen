@@ -72,7 +72,7 @@
                         </div>
                     </td>
                     <td>
-                        <img class="game-image" src="./img/projects/abbots-gambol.png"/>
+                        <img class="game-image" src="./img/projects/abbots-gambol.png" data-static="./img/projects/abbots-gambol.png" data-gif="./img/projects/abbots-gambol-gif1.gif"/>
                     </td>
                 </tr>
             </table>
@@ -116,6 +116,22 @@
         </a>
     <script type="text/javascript">
         $('html, body').animate({scrollTop:0},100);
+        $(function() {
+            $(".game-image").hover(
+                function() {
+                    const gifPath = $(this).data("gif");
+                    if (gifPath !== undefined) {
+                        $(this).attr("src", $(this).data("gif"));
+                    }
+                },
+                function() {
+                    const staticPath = $(this).data("static");
+                    if (staticPath !== undefined) {
+                        $(this).attr("src", $(this).data("static"));
+                    }
+                }
+            );
+        });
     </script>
 </body>
 </html>
