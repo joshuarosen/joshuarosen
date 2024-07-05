@@ -41,7 +41,7 @@
     <div id="games" class="animate__animated animate__fadeInUp" style="animation-delay:.8s; animation-duration:2s">
         <h1>games i've worked on</h1>
         <a href="https://mrmeowmurs.itch.io/wormsign">
-            <table class="game-table">
+            <table class="game-table" data-static="./img/projects/wormsign.png" data-gif="./img/projects/wormsign-gif.gif">
                 <tr>
                     <td class="game-info">
                         <div class="game-title">Wormsign</div>
@@ -52,14 +52,14 @@
                         </div>
                     </td>
                     <td>
-                        <img class="game-image" src="./img/projects/wormsign.png" data-static="./img/projects/wormsign.png" data-gif="./img/projects/wormsign-gif.gif"/>
+                        <img class="game-image" src="./img/projects/wormsign.png"/>
                     </td>
                 </tr>
             </table>
         </a>
         <hr class="rounded">
         <a href="https://mrmeowmurs.itch.io/abbots-gambol">
-            <table class="game-table">
+            <table class="game-table" data-static="./img/projects/abbots-gambol.png" data-gif="./img/projects/abbots-gambol-gif1.gif">
                 <tr>
                     <td class="game-info">
                         <div class="game-title">Abbot's Gambol</div>
@@ -72,7 +72,7 @@
                         </div>
                     </td>
                     <td>
-                        <img class="game-image" src="./img/projects/abbots-gambol.png" data-static="./img/projects/abbots-gambol.png" data-gif="./img/projects/abbots-gambol-gif1.gif"/>
+                        <img class="game-image" src="./img/projects/abbots-gambol.png"/>
                     </td>
                 </tr>
             </table>
@@ -117,17 +117,19 @@
     <script type="text/javascript">
         $('html, body').animate({scrollTop:0},100);
         $(function() {
-            $(".game-image").hover(
+            $(".game-table").hover(
                 function() {
                     const gifPath = $(this).data("gif");
                     if (gifPath !== undefined) {
-                        $(this).attr("src", $(this).data("gif"));
+                        const imgChild = $(this).find('img');
+                        imgChild.attr("src", $(this).data("gif"));
                     }
                 },
                 function() {
                     const staticPath = $(this).data("static");
                     if (staticPath !== undefined) {
-                        $(this).attr("src", $(this).data("static"));
+                        const imgChild = $(this).find('img');
+                        imgChild.attr("src", $(this).data("static"));
                     }
                 }
             );
