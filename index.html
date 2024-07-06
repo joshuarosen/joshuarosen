@@ -34,61 +34,51 @@
     </div>
     <div id="about" class="animate__animated animate__fadeInLeft" style="animation-delay:.35s; animation-duration:2s">
         <h1>Hello!</h1>
-        <div>I'm a software engineer in the Seattle area working on Android development.</div>
+        <div>I'm a software engineer in the Seattle area, currently doing Android dev at Google.</div>
         <br/>
         <div>Sometimes I make indie games for fun.</div>
+        <br/>
+        <div>Here's my <a class="link" href="./resources/JoshuaRosen_Resume_2024.pdf" target="_blank">resume</a>.</div>
     </div>
     <div id="games" class="animate__animated animate__fadeInUp" style="animation-delay:.8s; animation-duration:2s">
-        <h1>games i've worked on</h1>
+        <h1>solo projects</h1>
         <a href="https://mrmeowmurs.itch.io/wormsign">
-            <table class="game-table">
+            <table class="game-table" data-static="./img/projects/wormsign.png" data-gif="./img/projects/wormsign-gif.gif">
                 <tr>
                     <td class="game-info">
                         <div class="game-title">Wormsign</div>
                         <div class="game-desc">A short musical experience, playable in your browser.</div>
-                        <div class="game-role">Solo project.</div>
-                        <div class="game-platforms">
-                                <i class="fab fa-html5"></i>
-                        </div>
+                        <div class="game-details">Made in Unity</div>
                     </td>
                     <td>
-                        <img class="game-image" src="./img/projects/wormsign.png" data-static="./img/projects/wormsign.png" data-gif="./img/projects/wormsign-gif.gif"/>
+                        <img class="game-image" src="./img/projects/wormsign.png"/>
                     </td>
                 </tr>
             </table>
         </a>
         <hr class="rounded">
         <a href="https://mrmeowmurs.itch.io/abbots-gambol">
-            <table class="game-table">
+            <table class="game-table" data-static="./img/projects/abbots-gambol.png" data-gif="./img/projects/abbots-gambol-gif1.gif">
                 <tr>
                     <td class="game-info">
                         <div class="game-title">Abbot's Gambol</div>
                         <div class="game-desc">A card game for one or two players.<br/>Selected for exhibition at <a class="link" href="https://six.seattleindies.org/2023/#abbotsgambol">SIX 2023</a>.</div>
-                        <div class="game-role">Solo project.</div>
-                        <div class="game-platforms">
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-windows"></i>
-                                <i class="fab fa-apple"></i>
-                        </div>
+                        <div class="game-details">Made in Unity</div>
                     </td>
                     <td>
-                        <img class="game-image" src="./img/projects/abbots-gambol.png" data-static="./img/projects/abbots-gambol.png" data-gif="./img/projects/abbots-gambol-gif1.gif"/>
+                        <img class="game-image" src="./img/projects/abbots-gambol.png"/>
                     </td>
                 </tr>
             </table>
         </a>
-        <hr class="rounded">
+        <h1>university projects</h1>
         <a href="https://mrmeowmurs.itch.io/typeknight">
             <table class="game-table">
                 <tr>
                     <td class="game-info">
                         <div class="game-title">Typeknight</div>
                         <div class="game-desc">Practice your typing by defeating three unique bosses.</div>
-                        <div class="game-role">University project.<br/>I worked on programming and game design.</div>
-                        <div class="game-platforms">
-                                <i class="fab fa-windows"></i>
-                                <i class="fab fa-apple"></i>
-                        </div>
+                        <div class="game-details">Programming/design<br/>Made in Unity</div>
                     </td>
                     <td>
                         <img class="game-image" src="./img/projects/typeknight.png"/>
@@ -103,10 +93,7 @@
                     <td class="game-info">
                         <div class="game-title">JetStreamers</div>
                         <div class="game-desc">Steer two starships to safety through an asteroid field.</div>
-                        <div class="game-role">University project.<br/>I worked on programming and game design.</div>
-                        <div class="game-platforms">
-                                <i class="fab fa-windows"></i>
-                        </div>
+                        <div class="game-details">Programming/design<br/>Made in Unreal</div>
                     </td>
                     <td>
                         <img class="game-image" src="./img/projects/jetstreamers.png"/>
@@ -117,17 +104,19 @@
     <script type="text/javascript">
         $('html, body').animate({scrollTop:0},100);
         $(function() {
-            $(".game-image").hover(
+            $(".game-table").hover(
                 function() {
                     const gifPath = $(this).data("gif");
                     if (gifPath !== undefined) {
-                        $(this).attr("src", $(this).data("gif"));
+                        const imgChild = $(this).find('img');
+                        imgChild.attr("src", $(this).data("gif"));
                     }
                 },
                 function() {
                     const staticPath = $(this).data("static");
                     if (staticPath !== undefined) {
-                        $(this).attr("src", $(this).data("static"));
+                        const imgChild = $(this).find('img');
+                        imgChild.attr("src", $(this).data("static"));
                     }
                 }
             );
